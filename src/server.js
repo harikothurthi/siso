@@ -11,7 +11,7 @@ import tokenRoutes from "./routes/tokenRoutes";
 import spdy from 'spdy';
 
 
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 80;
 const app = express();
 
 fs.readFile(`${path.resolve(process.cwd())}/key/private.rsa`, (err, data) => {
